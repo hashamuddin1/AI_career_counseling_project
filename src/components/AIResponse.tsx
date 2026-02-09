@@ -19,7 +19,7 @@ interface AIResponseProps {
  */
 const client = new OpenAI({
   baseURL: "https://router.huggingface.co/v1",
-  apiKey: "YOUR_SECRET_KEY",
+  apiKey: process.env.apiKey,
   dangerouslyAllowBrowser: true,
 });
 
